@@ -1,0 +1,318 @@
+/* 
+    Document   : admin
+    Created on : 13-mag-2013, 23.36.47
+    Author     : User
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* Home Admin
+********************************************************************************/
+
+section#statistiche,
+section#datiPrincipali,
+section#ubicazione,
+section#descrizione,
+section#datiAccessori,
+section#listaFoto,
+section#uploadFoto,
+section#collaborazione,
+section#noteCollaborazione,
+section#gestioneLocalita {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3),
+                0 0 40px rgba(0, 0, 0, 0.1) inset;
+    padding: 5px;
+}
+
+section#statistiche section {
+    float: left;
+    width: 400px;
+}
+
+section#statistiche dd,
+section#statistiche dt {
+    display: inline-block;
+    width: 190px;
+    line-height: 25px;
+}
+
+section#statistiche dd {
+    color: green;
+    font-weight: bold;
+}
+
+/* Lista immobili
+********************************************************************************/
+
+table {text-align: center;}
+
+thead {
+    background: -moz-linear-gradient(top, #999 0%, #666 100%);
+    background: -webkit-gradient(linear, top, bottom, color-stop(0, #999), color-stop(1, #666));
+    background: -webkit-linear-gradient(top, #999 0%, #666 100%);
+    background: -o-linear-gradient(top, #999 0%, #666 100%);
+    background: -ms-linear-gradient(top, #999 0%, #666 100%);  /* IE 10 */
+    background: linear-gradient(top, #999 0%, #666 100%);
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 23px;
+}
+
+tr td:first-of-type img { width: 65px; }
+
+tbody tr {
+    border-top: 5px solid #fff;
+    background: -moz-linear-gradient(top, #CCC 0%, #999 100%);
+    background: -webkit-gradient(linear, top, bottom, color-stop(0, #CCC), color-stop(1, #999));
+    background: -webkit-linear-gradient(top, #CCC 0%, #999 100%);
+    background: -o-linear-gradient(top, #CCC 0%, #999 100%);
+    background: -ms-linear-gradient(top, #CCC 0%, #999 100%);  /* IE 10 */ 
+    background: linear-gradient(top, #CCC 0%, #999 100%);
+}
+
+tbody tr:nth-of-type(2n) {
+    border-top: 5px solid #fff;
+    background: -moz-linear-gradient(top, #B9CDF7 0%, #8098CE 100%);
+    background: -webkit-gradient(linear, top, bottom, color-stop(0, #EEE), color-stop(1, #8098CE));
+    background: -webkit-linear-gradient(top, #EEE 0%, #8098CE 100%);
+    background: -o-linear-gradient(top, #EEE 0%, #8098CE 100%);
+    background: -ms-linear-gradient(top, #EEE 0%, #8098CE 100%);  /* IE 10 */ 
+    background: linear-gradient(top, #EEE 0%, #8098CE 100%);
+}
+
+tbody tr:hover {
+    background: rgba(141, 192, 89, .4);
+}
+
+td {
+    padding-top: 5px;
+    padding-bottom: 3px;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+td a img {opacity: .5;}
+td a:hover img {opacity: 1;}
+
+.select,
+.select:nth-of-type(2n) {
+    background: orangered;
+}
+
+/* Inserisci - Modifica Immobile
+********************************************************************************/
+
+section#datiPrincipali div,
+section#datiAccessori div,
+section#collaborazione div,
+section#gestioneLocalita div {
+    float: left;
+    width: 545px;
+    /*border: 1px solid #999;*/
+}
+
+section#datiPrincipali div li,
+section#datiAccessori div li,
+section#ubicazione li,
+section#uploadFoto li,
+section#collaborazione div li {
+    display: inline-block;
+    width: 269px;
+    line-height: 40px;
+    /*border: 1px solid #444;*/
+}
+
+#frmImmobile select,
+#frmImmobile input,
+#frmImmobile textarea,
+#frmUplFoto input, 
+#frmUplFoto select,
+#frmCollaborazione textarea {
+    border: 1px solid #666;
+    padding: 4px 2px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+}
+
+#frmImmobile select:focus,
+#frmImmobile input:focus,
+#frmImmobile textarea:focus,
+#frmCollaborazione textarea:focus {
+    border: 1px solid #576FB4;
+    background: rgba(87, 111, 180, 0.4);
+}
+
+#frmImmobile textarea,
+#frmCollaborazione textarea {
+    width: 1090px;
+    height: 150px;
+    resize: none;
+}
+
+#frmCollaborazione textarea { margin-bottom: 20px; }
+
+#frmImmobile label,
+#frmUplFoto label,
+#frmCollaborazione label,
+#gestioneLocalita label {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#vani,
+#superficie,
+#codRif,
+#indice,
+#soggiorno, 
+#camera, 
+#bagno, 
+#supCommerciali, 
+#supEsterni,
+#supProduttivi, 
+#supUffici { width: 60px; }
+
+#stato,
+#contratto,
+#categoria,
+#tipologia,
+#attivita,
+#condizione,
+#piano,
+#livelli,
+#cucina,
+#localita, 
+#zona { width: 160px; }
+
+#mappa {
+    width: 1090px;
+    height: 200px;
+    border: 1px solid #666;
+}
+
+/*.residenziale, 
+.commerciale,
+.terreno {
+    margin-bottom: 20px;
+    display: none;
+}*/
+
+
+.buttonBlue {
+	display: block;
+	width: 110px;
+	text-decoration: none;
+	margin: 0 auto;
+	border: 1px solid #26378C;
+        box-shadow: rgba(0,0,0,0.6) 0px 1px 3px, inset rgba(255,255,255,0.4) 0 1px 0;
+	background: #576FB4;
+	background: -moz-linear-gradient(top, #8BA3E5 0%, #576FB4 100%);
+	background: -webkit-gradient(linear, top, bottom, color-stop(0, #8BA3E5), color-stop(1, #576FB4));
+	background: -webkit-linear-gradient(top, #8BA3E5 0%, #576FB4 100%);
+	background: -o-linear-gradient(top, #8BA3E5 0%, #576FB4 100%);
+	background: -ms-linear-gradient(top, #8BA3E5 0%, #576FB4 100%); /* IE 10 */
+	background: linear-gradient(top, #8BA3E5 0%, #576FB4 100%);
+	color: #26378C;
+	font-size: 14px;
+	text-shadow: 0 1px 0 #8BA3E5;
+	line-height: 35px;
+        transition: color .3s ease-in;
+        -webkit-transition: color .3s ease-in;
+        -o-transition: color .3s ease-in;
+        -moz-transition: color .3s ease-in;
+}
+
+.buttonBlue:hover { 
+	color: #FFF; 
+	text-shadow: 0 1px 0 #26378C;
+}
+
+.buttonBlue:active { 
+    background: -moz-linear-gradient(top, #576FB4 0%, #8BA3E5 100%);
+    background: -webkit-gradient(linear, top, bottom, color-stop(0, #576FB4), color-stop(1, #8BA3E5));
+    background: -webkit-linear-gradient(top, #576FB4 0%, #8BA3E5 100%);
+    background: -o-linear-gradient(top, #576FB4 0%, #8BA3E5 100%);
+    background: -ms-linear-gradient(top, #576FB4 0%, #8BA3E5 100%); /* IE 10 */ 
+    background: linear-gradient(top, #576FB4 0%, #8BA3E5 100%);
+        
+}
+
+/* Gestione Foto
+********************************************************************************/
+
+section#listaFoto article {
+    float: left;
+    width: 208px;
+    margin: 5px 5px; 
+    border: 1px solid #333;
+    padding: 10px;
+    background: #666;
+}
+
+section#listaFoto article div { margin-top: 5px; }
+
+section#listaFoto span {
+    color: #DDD;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#modDidascalia {
+    width: 145px; 
+    padding: 5px 0; 
+}
+
+.anteprima { height: 139px; }
+
+section#listaFoto input[type=button] {
+    border: 1px solid #CCC;
+    background: #999;
+    font-size: 12px;
+    color: #333;
+}
+
+ul#fileList li {
+    width: 900px;
+}
+ul#fileList li div {
+    display: inline-block;
+}
+
+.selDelete { width: 50px;}
+.fileName { width: 200px;}
+.fileSize { width: 150px;}
+.alt_text { width: 300px;}
+.status { width: 150px;}
+
+/* Gestione Zone
+********************************************************************************/
+
+section#gestioneLocalita div ul:first-of-type {
+    display: block;
+    width: 350px;
+    margin-bottom: 20px;
+    border: 1px solid #666;
+    padding: 10px;
+    background: #FFF;
+}
+
+section#gestioneLocalita div ul:first-of-type li {
+    display: block;
+    width: 270px;
+    line-height: 27px;
+}
+
+/* Common
+********************************************************************************/
+
+.hidden { visibility: hidden; }
+
+.error {
+    border: 1px solid #BF5959;
+    background: rgba(191, 89, 89, .4);
+    color: #BF5959;
+    font-size: 12px;
+}

@@ -1,0 +1,89 @@
+/* 
+    Document   : style
+    Created on : 5-gen-2013, 12.33.25
+    Author     : CodeBanker
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* Gallery Home */
+div#gallery {
+    position: relative;
+    height: 480px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+ul#imgContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*width: 4400px;*/
+    /*border: 2px dotted red;*/
+}
+
+ul#imgContainer li {
+    position: relative;
+    float: left;
+    height: 100%;
+}
+
+ul#imgContainer img {
+    width: 100%;
+}
+
+ul#imgContainer li hgroup {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 520px;
+    background: rgba(87, 111, 180, .8);
+    padding: 15px;
+    color: #FFF;
+    line-height: 24px;
+    /*opacity: 0.8;*/
+}
+
+div#prevBotton, 
+div#nextBotton {
+    /*opacity: .8;*/
+    background: rgba(87, 111, 180, .8);
+    padding: 15px;
+    color: #CCC;
+    font-weight: bold;
+}
+
+div#nextBotton {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+}
+
+div#prevBotton {
+    position: absolute;
+    top: 12px;
+    right: 100px;
+}
+
+div#gallery h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+div#gallery h2 {
+    font-size: 20px;
+    color: white;
+}
+
+div#gallery h2 a {
+    text-decoration: none;
+    color: #E9CB3A;
+}
+
+div#gallery h2 a:hover { text-decoration: underline; }
+
+@media screen and (min-width: 960px) and (max-width: 1119px) {
+
+}

@@ -1,0 +1,65 @@
+/* =================================================================================
+* 				HACK FOR IE 9
+ * ================================================================================= */
+
+/* LAYOUT
+ * ================================================================================= */
+
+div#headerContainer,
+div#footerContainer {
+    /*-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#829ACF', endColorstr='#576FB4')"; /*IE8*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#829ACF', endColorstr='#576FB4');
+}
+
+/* MAIN
+ * ================================================================================= */
+
+/* ----- Common ----- */
+
+.buttonBlue {
+    /*height: 38px;*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8BA3E5', endColorstr='#576FB4');
+}
+
+.buttonBlue:active {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#576FB4', endColorstr='#8BA3E5');
+}
+
+.buttonGreen {
+    /*height: 38px;*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8DC059', endColorstr='#6AA436');
+}
+
+.buttonGreen:active {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6AA436', endColorstr='#8DC059');
+}
+
+.buttonRed {
+    /*height: 38px;*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#BF5959', endColorstr='#A33535');
+}
+
+.buttonRed:active {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#A33535', endColorstr='#BF5959');
+}
+
+/* ----- Ricerca Home ----- */
+
+#ricercaHome,
+#ricercaHomeCod {
+    /*height: 215px;*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8BA3E5', endColorstr='#576FB4');
+}
+
+#boxSearchHomeZona,
+#boxSearchHomeAttCommerciale {display: none;}
+
+/* ----- Ricerca Laterale ----- */
+
+section#ricerca,
+section#ricercaCodice {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8BA3E5', endColorstr='#576FB4');
+}
+
+#boxSearchZona,
+#boxSearchAttCommerciale { display: none; }

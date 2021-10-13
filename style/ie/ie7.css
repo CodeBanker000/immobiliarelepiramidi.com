@@ -1,0 +1,150 @@
+/* =================================================================================
+ * 				HACK FOR IE 7
+ * ================================================================================= */
+
+* { behavior: url(styles/ie/boxsizing.htc); }
+
+/* LAYOUT
+ * ================================================================================= */
+
+/* ----- Header e Footer -----*/
+div#headerContainer { height: 220px; }
+
+div#footerContainer { height: 340px; }
+
+
+div#headerContainer,
+div#footerContainer { filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#829ACF', endColorstr='#576FB4'); }
+
+#footerCols section.column_1_4 { width: 250px; }
+
+/* ----- Menu ----- */
+
+ul#menu li { z-index: 300; }
+
+ul#menu ul { top: 35px; }
+
+ul#menu li:hover li a:hover { text-decoration: underline; }
+
+/* MAIN
+ * ================================================================================= */
+
+/* ----- Common ----- */
+
+.buttonBlue {
+    height: 38px;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8BA3E5', endColorstr='#576FB4');
+}
+
+.buttonBlue:active {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#576FB4', endColorstr='#8BA3E5');
+}
+
+.buttonGreen {
+    height: 38px;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8DC059', endColorstr='#6AA436');
+}
+
+.buttonGreen:active {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6AA436', endColorstr='#8DC059');
+}
+
+.buttonRed {
+    height: 38px;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#BF5959', endColorstr='#A33535');
+}
+
+.buttonRed:active {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#A33535', endColorstr='#BF5959');
+}
+
+/* ----- Slideshow ---- */
+
+ul#imgContainer li hgroup,
+div#prevBotton, 
+div#nextBotton { 
+    background: #576FB4; 
+    filter: alpha(opacity=80);
+}
+
+/* ----- Home ----- */
+
+.row { height: 0; }
+
+section#fotogallery,
+section#descrizione,
+section#ubicazione,
+section#caratteristiche,
+section#chisiamo,
+section#dovesiamo,
+section#contatti,
+section#moduloContatto,
+section#contatta,
+section#privacy,
+div#ricercaNetwork,
+table.tableCerchiMutuo,
+div#result article,
+div#last_article article { background: #EEE; }
+
+div#result article,
+div#last_article article { width: 250px; }
+
+section#fotogallery,
+section#descrizione,
+section#ubicazione,
+section#caratteristiche,
+section#contatta,
+section#chisiamo,
+section#dovesiamo,
+section#contatti,
+section#privacy { width: 800px; }
+
+section#moduloContatto { width: 798px; }
+
+/* ----- Ricerca Home ----- */
+
+#ricercaHome,
+#ricercaHomeCod {
+    height: 215px;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8BA3E5', endColorstr='#576FB4');
+}
+
+#boxSearchHomeZona,
+#boxSearchHomeAttCommerciale {display: none;}
+
+#ricercaHomeCod input[type=text] { width: 215px; }
+
+#boxSearchHomeVani input[type=text],
+#boxSearchHomeSuperficie input[type=text] { width: 56px; }
+
+#boxSearchHomePrezzo input[type=text] { width: 169px; }
+
+/* ----- Ricerca Laterale ----- */
+
+section#ricerca,
+section#ricercaCodice {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8BA3E5', endColorstr='#576FB4');
+}
+
+#boxSearchZona,
+#boxSearchAttCommerciale { display: none; }
+
+section#ricerca fieldset input[type=text] { width: 58px; }
+
+section#ricerca fieldset input#minPrezzo,
+section#ricerca fieldset input#maxPrezzo { width: 178px; }
+
+section#ricercaCodice input[type=text] { width: 90px; }
+
+/* ----- Dettagli ----- */
+
+#ubicazione dt,
+#ubicazione dd,
+#caratteristiche dt,
+#caratteristiche dd { display: inline; width: 180px;}
+
+#contatta div:first-child,
+#moduloContatto div:first-child { width: 257px; }
+
+#contatta input[type=text],
+#moduloContatto input[type=text] { width: 245px; }

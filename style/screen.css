@@ -1,0 +1,31 @@
+/*====================================================================================
+								CSS Screen 1024
+====================================================================================*/
+
+/*
+ *	Importazione dei File necessari per visualizzare lo stile
+ *	nei display con larghezza minima 1024 pixel.
+ *
+ *	Vengono visualizzati in tutti i Browser escluso Internet Explorer.
+ */
+
+
+/* File reset delle impostazioni
+=========================================================================*/
+
+@import url("reset.css");
+
+/* File della griglia
+=========================================================================*/
+
+@import url("grid.css");
+
+/* File del layout della pagina
+=========================================================================*/
+
+@import url("layout.css");
+
+/* MAIN
+ * ================================================================================= */
+
+@import url("main.css");

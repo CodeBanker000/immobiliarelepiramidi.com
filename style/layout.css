@@ -1,0 +1,255 @@
+/* =================================================================================
+* 				LAYOUT BROWSER NO IE
+ * ================================================================================= */
+
+/*
+ * Definisce il layout della pagina per display con il minimo di risoluzione pari
+ * a 1280px di larghezza. I browser per questo layout sono tutti escluso il solito
+ * Internet Explorer
+ */
+
+/* BODY
+ * ================================================================================= */
+
+body { font-family: "Open Sans", sans-serif; }
+
+h1 {
+    
+}
+
+h2 {
+    color: #E9CB3A;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+    /*font-weight: bold;*/
+    color: #000;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-shadow: 0 1px 0 #B2B2B2;
+    line-height: 25px;
+}
+
+h5 {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 20px;
+}
+
+/* CONTAINER header, footer
+ * ================================================================================= */
+
+div#headerContainer,
+div#footerContainer {
+    background: #576FB4;
+    background: -moz-linear-gradient(top, #829ACF 0%, #576FB4 100%);
+    background: -webkit-gradient(linear, top, bottom, color-stop(0, #829ACF), color-stop(1, #576FB4));
+    background: -webkit-linear-gradient(top, #829ACF 0%, #576FB4 100%);
+    background: -o-linear-gradient(top, #829ACF 0%, #576FB4 100%);
+    background: -ms-linear-gradient(top, #829ACF 0%, #576FB4 100%); /* IE 10 */
+    background: linear-gradient(top, #829ACF 0%, #576FB4 100%);
+}
+
+/* HEADER E NAV
+ * ================================================================================= */
+
+/* ----- Header ----- */
+
+header#testata { padding-top: 20px; }
+
+header#testata section {
+    /*color: #E9CB3A;*/
+    /*font-weight: bold;*/
+    /*font-size: 30px;*/
+    text-align: right;
+}
+
+div#fiaip { margin-top: 20px; }
+div#fiaip img { width: 150px; }
+
+/* ----- Menu ----- */
+
+/* container */
+nav#menuContent { margin-top: 42px;}
+
+/* menu principale */
+ul#menu li {
+    position: relative;
+    float: left;
+}
+
+ul#menu li:first-child { border-left: none; }
+
+ul#menu li:last-child { border-right: none; }
+
+ul#menu li a {
+    float: left;
+    text-decoration: none;
+    border-top: 3px solid #5E76B8;
+    padding: 10px 11px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #333;
+    text-transform: uppercase;
+    transition: border-top .5s ease-out;
+}
+
+/* state Hover */
+
+ul#menu li:hover a, 
+ul#menu li a:hover { border-top: 3px solid #FFF; }
+
+/* Sub menu */
+
+ul#menu li:hover ul { display: block; }
+
+ul#menu ul {
+    display: none;
+    position: absolute;
+    top: 37px;
+    left: 0;
+    background: #576FB4;
+    z-index: 300;
+}
+
+ul#menu li:hover li {
+    box-shadow: none;
+    border-top: 1px solid #829ACF;
+    border-bottom: 1px solid #26378C;
+    text-align: left;
+}
+
+ul#menu li:hover li:first-child { border-top: none; }
+
+ul#menu li:hover li:last-child { border-bottom: none; }
+
+ul#menu li:hover li a {
+    box-shadow: none;
+    border-top: none;
+}
+
+ul#menu ul a {
+    width: 120px;
+    padding: 8px 10px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+/* State hover */
+
+ul#menu li:hover li:hover { box-shadow: 0 0 7px rgba(0, 0, 0, 0.3) inset; }
+
+/* FOOTER
+ =================================================================================== */
+
+/* ----- Link ----- */
+
+#footerCols section {
+    margin-top: 20px;
+}
+
+#footerCols section:last-child div.row {
+    border-top-color: #26378C;
+    border-bottom-color: #829ACF; 
+}
+
+#footerCols ul { 
+    margin-top: 20px;
+}
+
+#footerCols li {
+    display: block;
+    border-top: 1px solid #829ACF;
+    border-bottom: 1px solid #576FB4;
+    padding-left: 17px;
+    background: url(../immagini/footer-bullet.png) no-repeat 0 8px;
+    line-height: 24px;
+}
+
+#footerCols li:first-child { border-top: none; }
+
+#footerCols li:last-child { border-bottom: none; }
+
+#footerCols li a {
+    text-decoration: none;
+    color: #CCC;
+    font-size: 14px;
+}
+
+#footerCols li a:hover {
+    padding-left: 8px;
+    color: #FFF;
+}
+
+#footerCols p {
+    margin-bottom: 20px;
+    color: #FFF;
+    font-size: 12px;
+}
+
+#toolbarSocial {
+    border-left: 1px solid #576FB4;
+    padding-left: 20px;
+}
+
+#toolbarSocial a {
+    display: block;
+}
+
+@media screen and (min-width: 960px) and (max-width: 1119px) {
+    
+    h2 {font-size: 1.75em; }
+    
+    h6 {font-size: 1em; }
+    
+    header#testata {padding-top: .5em;}
+    
+    header#testata img {width: 100%;}
+    
+    
+    
+    nav#menuContent { margin-top: 17.3%;}
+    
+    ul#menu li a { font-size: .71em; }
+    
+    ul#menu ul {top: 100%;}
+    
+    ul#menu ul a { font-size: .56em; }
+    
+    footer section.column_1_4 { width: 23.25%; }
+    
+    #footerCols p {font-size: .65em;}
+}
+
+@media screen and (min-width: 640px) and (max-width: 959px) {
+    
+    h2 {font-size: 1.75em; }
+    
+    header#testata img {width: 100%;}
+    
+    header#testata {padding-top: .5em;}
+    
+    nav#menuContent { margin-top: 16%;}
+    
+    ul#menu li a { font-size: .46em; }
+    
+    ul#menu ul {top: 100%;}
+}

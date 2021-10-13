@@ -1,0 +1,596 @@
+/* =================================================================================
+ * 				STYLE FOR MAIN NO IE
+ * ================================================================================= */
+
+/*
+ * Definisce tutti gli stili per gestire i contenuti del sito, non supporta Internet
+ * Explorer. 
+ */
+
+
+/* HOME
+======================================================================================*/
+
+/* Main */
+
+div#mainContainer { padding: 20px 0; }
+
+.row {
+    margin-bottom: 10px;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #999;
+}
+
+section#fotogallery,
+section#descrizione,
+section#ubicazione,
+section#caratteristiche,
+section#chisiamo,
+section#dovesiamo,
+section#contatti,
+section#moduloContatto,
+section#contatta,
+section#privacy,
+div#ricercaNetwork,
+div#tassiInteresse,
+div#ricercaMutuoSmall,
+div#result article,
+div#last_article article {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3),
+                0 0 40px rgba(0, 0, 0, 0.1) inset;
+    padding: 5px;
+}
+
+div#tassiInteresse {text-align: center;}
+
+section#fotogallery,
+section#descrizione,
+section#ubicazione,
+section#caratteristiche,
+section#chisiamo,
+section#dovesiamo,
+section#contatti,
+section#moduloContatto, 
+section#contatta,
+section#privacy { padding: 10px; }
+
+div#result dl,
+div#last_article dl {
+	font-size: 14px;
+}
+
+div#result dt,
+div#result dd,
+div#last_article dt,
+div#last_article dd {
+	display: inline;
+	line-height: 25px;
+}
+
+div#result dt,
+div#last_article dt {
+	margin-right: 3px;
+}
+
+div#result dd,
+div#last_article dd {
+	margin-right: 15px;
+	font-weight: bold;
+}
+
+div#result dd:nth-of-type(3),
+div#last_article dd:nth-of-type(3) {
+	margin-right: 0;
+}
+
+div#result dd img,
+div#last_article dd img {
+	vertical-align: middle;
+}
+
+div#result span,
+div#last_article span {
+	display: block;
+	width: 240px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.buttonBlue {
+	display: block;
+	width: 110px;
+	text-decoration: none;
+	margin: 0 auto;
+	border: 1px solid #26378C;
+        box-shadow: rgba(0,0,0,0.6) 0px 1px 3px, inset rgba(255,255,255,0.4) 0 1px 0;
+	background: #576FB4;
+	background: -moz-linear-gradient(top, #8BA3E5 0%, #576FB4 100%);
+	background: -webkit-gradient(linear, top, bottom, color-stop(0, #8BA3E5), color-stop(1, #576FB4));
+	background: -webkit-linear-gradient(top, #8BA3E5 0%, #576FB4 100%);
+	background: -o-linear-gradient(top, #8BA3E5 0%, #576FB4 100%);
+	background: -ms-linear-gradient(top, #8BA3E5 0%, #576FB4 100%); /* IE 10 */
+	background: linear-gradient(top, #8BA3E5 0%, #576FB4 100%);
+	color: #26378C;
+	font-size: 14px;
+	text-shadow: 0 1px 0 #8BA3E5;
+	line-height: 35px;
+        transition: color .3s ease-in;
+        -webkit-transition: color .3s ease-in;
+        -o-transition: color .3s ease-in;
+        -moz-transition: color .3s ease-in;
+}
+
+.buttonBlue:hover { 
+	color: #FFF; 
+	text-shadow: 0 1px 0 #26378C;
+}
+
+.buttonBlue:active { 
+    background: -moz-linear-gradient(top, #576FB4 0%, #8BA3E5 100%);
+    background: -webkit-gradient(linear, top, bottom, color-stop(0, #576FB4), color-stop(1, #8BA3E5));
+    background: -webkit-linear-gradient(top, #576FB4 0%, #8BA3E5 100%);
+    background: -o-linear-gradient(top, #576FB4 0%, #8BA3E5 100%);
+    background: -ms-linear-gradient(top, #576FB4 0%, #8BA3E5 100%); /* IE 10 */ 
+    background: linear-gradient(top, #576FB4 0%, #8BA3E5 100%);
+        
+}
+
+/* Ricerca */
+
+#ricercaHome,
+#ricercaHomeCod {
+    background: #576FB4;
+    background: -moz-linear-gradient(top, #829ACF 0%, #576FB4 100%);
+    background: -webkit-gradient(linear, top, bottom, color-stop(0, #829ACF), color-stop(1, #576FB4));
+    background: -webkit-linear-gradient(top, #829ACF 0%, #576FB4 100%);
+    background: -o-linear-gradient(top, #829ACF 0%, #576FB4 100%);
+    background: -ms-linear-gradient(top, #829ACF 0%, #576FB4 100%);
+    background: linear-gradient(top, #829ACF 0%, #576FB4 100%);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+    color: #FFF;
+}
+
+#ricercaHomeCod { 
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px; 
+}
+
+#ricercaHome legend,
+#ricercaHome label {
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+#ricercaHome select {
+    color: #666;
+    font-size: 14px;
+    width: 255px;
+    padding: 4px 10px;
+    text-transform: capitalize;
+}
+
+#boxSearchHomeContratto div,
+#boxSearchHomeCategoria div {
+    width: 127.5px;
+    float: left;
+}
+
+#boxSearchHomeVani,
+#boxSearchHomeSuperficie {
+    display: inline;
+    width: 127.5px;
+    line-height: 35px;
+}
+
+#ricercaHome input[type=text],
+#ricercaHomeCod input[type=text]
+{
+    color: #666;
+    font-size: 14px;
+    width: 80px;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 4px 10px;
+}
+
+#boxSearchHomePrezzo input[type=text] { width: 193px; }
+
+#ricercaHomeCod input[type=text] {
+    width: 240px;
+    margin: 0;
+}
+
+#ricercaHomeCod p {
+    font-size: 14px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+#ricercaHome span {
+    float: none;
+    clear: both;
+    display: block;
+    width: 520px;
+    margin-left: 10px;
+    /*border: 1px solid #fff;*/
+    padding: 11px 0;
+    text-align: center;
+}
+
+#ricercaHomeCod span {
+    display: block;
+    width: 240px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.col {
+    float: left;
+    width: 255px;
+    /*border: 1px solid #fff;*/
+    margin-top: 6px;
+    margin-left: 10px;
+}
+
+.buttonGreen {
+    width: 110px;
+    border: 1px solid #447314;
+    background: #6aa436;
+    background: -webkit-gradient(linear, left top, left bottom, from(#8dc059), to(#6aa436));
+    background: -webkit-linear-gradient(top, #8dc059, #6aa436);
+    background: -moz-linear-gradient(top, #8dc059, #6aa436);
+    background: -ms-linear-gradient(top, #8dc059, #6aa436);
+    background: -o-linear-gradient(top, #8dc059, #6aa436);
+    background-image: -ms-linear-gradient(top, #8dc059 0%, #6aa436 100%);
+    -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    text-shadow: #addc7e 0 1px 0;
+    text-transform: capitalize;
+    color: #31540c;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 32px;
+    transition: color .3s ease-in;
+    -webkit-transition: color .3s ease-in;
+    -o-transition: color .3s ease-in;
+    -moz-transition: color .3s ease-in;
+}
+
+.buttonGreen:hover {
+    border: 1px solid #447314;
+    text-shadow: #31540c 0 1px 0;
+    background: #6aa436;
+    background: -webkit-gradient(linear, left top, left bottom, from(#8dc059), to(#6aa436));
+    background: -webkit-linear-gradient(top, #8dc059, #6aa436);
+    background: -moz-linear-gradient(top, #8dc059, #6aa436);
+    background: -ms-linear-gradient(top, #8dc059, #6aa436);
+    background: -o-linear-gradient(top, #8dc059, #6aa436);
+    background-image: -ms-linear-gradient(top, #8dc059 0%, #6aa436 100%);
+    color: #fff;
+}
+
+.buttonGreen:active {
+    text-shadow: #31540c 0 1px 0;
+    border: 1px solid #447314;
+    background: #8dc059;
+    background: -webkit-gradient(linear, left top, left bottom, from(#6aa436), to(#6aa436));
+    background: -webkit-linear-gradient(top, #6aa436, #8dc059);
+    background: -moz-linear-gradient(top, #6aa436, #8dc059);
+    background: -ms-linear-gradient(top, #6aa436, #8dc059);
+    background: -o-linear-gradient(top, #6aa436, #8dc059);
+    background-image: -ms-linear-gradient(top, #6aa436 0%, #8dc059 100%);
+    color: #fff;
+}
+
+.buttonRed {
+    width: 110px;
+    border: 1px solid #721414;
+    background: #A33535;
+    background: -webkit-gradient(linear, left top, left bottom, from(#BF5959), to(#A33535));
+    background: -webkit-linear-gradient(top, #BF5959, #A33535);
+    background: -moz-linear-gradient(top, #BF5959, #A33535);
+    background: -ms-linear-gradient(top, #BF5959, #A33535);
+    background: -o-linear-gradient(top, #BF5959, #A33535);
+    background-image: -ms-linear-gradient(top, #BF5959 0%, #A33535 100%);
+    -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    text-shadow: #DB7F7F 0 1px 0;
+    text-transform: capitalize;
+    color: #510C0C;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 32px;
+    transition: color .3s ease-in;
+    -webkit-transition: color .3s ease-in;
+    -o-transition: color .3s ease-in;
+    -moz-transition: color .3s ease-in;
+}
+
+.buttonRed:hover {
+    border: 1px solid #721414;
+    text-shadow: #510C0C 0 1px 0;
+    background: #A33535;
+    background: -webkit-gradient(linear, left top, left bottom, from(#BF5959), to(#A33535));
+    background: -webkit-linear-gradient(top, #BF5959, #A33535);
+    background: -moz-linear-gradient(top, #BF5959, #A33535);
+    background: -ms-linear-gradient(top, #BF5959, #A33535);
+    background: -o-linear-gradient(top, #BF5959, #A33535);
+    background-image: -ms-linear-gradient(top, #BF5959 0%, #A33535 100%);
+    color: #fff;
+}
+
+.buttonRed:active {
+    text-shadow: #31540c 0 1px 0;
+    border: 1px solid #721414;
+    background: #8dc059;
+    background: -webkit-gradient(linear, left top, left bottom, from(#A33535), to(#BF5959));
+    background: -webkit-linear-gradient(top, #A33535, #BF5959);
+    background: -moz-linear-gradient(top, #A33535, #BF5959);
+    background: -ms-linear-gradient(top, #A33535, #BF5959);
+    background: -o-linear-gradient(top, #A33535, #BF5959);
+    background-image: -ms-linear-gradient(top, #A33535 0%, #BF5959 100%);
+    color: #fff;
+}
+
+/* Dettagli
+============================================================================================= */
+
+#infoTop span {
+    display: inline-block;
+    width: 270px;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+
+strong {font-weight: bold;}
+
+i {font-style: italic;}
+
+.prezzo {
+    color: red;
+    text-align: right;
+    font-size: 22px;
+}
+
+/* fotogallery */
+
+#fotogallery div,
+#fotogallery li {
+    float: left;
+}
+
+#placeImg {
+    width: 575px;
+    border: 1px solid #CCC;
+    text-align: center;
+}
+
+#placeImg img {
+    /*width: 573px;*/
+    height: 429.75px;
+}
+
+#imgHolder {
+    width: 215px;
+    height: 434px;
+    overflow: hidden;
+    margin-left: 10px;
+    border: 1px solid #191919;
+    padding-top: 3px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+}
+
+#fotogallery li {
+    display: block;
+    width: 102px;
+    height: 80px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    border: 1px solid #333;
+    padding: 5px;
+    text-align: center;
+}
+
+#fotogallery li:hover {
+    background: black;
+    opacity: .4;
+}
+
+.showed {
+    background: rgba(0, 0, 0, .2);
+}
+
+#fotogallery li img {height: 67.5px;}
+
+/* fine fotogallery */
+
+#ubicazione div {
+    float: left;
+}
+
+#descrizione p,
+#chisiamo p {
+    font-size: 14px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+#caratteristiche div {
+    float: left;
+    width: 400px;
+}
+
+#ubicazione dt,
+#ubicazione dd,
+#caratteristiche dt,
+#caratteristiche dd {
+    display: inline-block;
+    width: 190px;
+    margin: 3px;
+    padding-left: 5px;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+#ubicazione dd,
+#caratteristiche dd {
+    background: #DDD;
+    font-weight: bold;
+}
+
+#caratteristiche dd img {vertical-align: middle;}
+
+#ubicazione dt,
+#caratteristiche dt {
+    background: #EEE;
+    text-transform: capitalize;
+}
+
+#contatta, 
+#moduloContatto { border: 1px solid #721414; }
+
+#contatta div, 
+#moduloContatto div { float: left; }
+
+#contatta div:first-child,
+#moduloContatto div:first-child { width: 269px; }
+
+#contatta label,
+#moduloContatto label {
+    text-transform: capitalize;
+    line-height: 24px;
+}
+
+#contatta input[type=text],
+#moduloContatto input[type=text] {
+    width: 260px;
+    padding: 5px 3px;
+}
+
+#contatta textarea,
+#moduloContatto textarea {
+    width: 529px;
+    height: 160px;
+    resize: none;
+}
+
+#contatta span,
+#moduloContatto span {
+    display: block;
+    width: 798px;
+    text-align: right;
+}
+
+.checkPrivacy {
+    font-size: 14px;
+    text-transform: initial;
+}
+
+section#privacy {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* Contatti
+================================================================================ */
+
+#contatti div {
+    float: left;
+    width: 400px;
+}
+
+#contatti div:first-child { border-right: 1px solid #DDD; }
+
+#contatti div:last-child { border-left: 1px solid #999; }
+
+#contatti li {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+#contatti li:last-child { margin-bottom: 0; }
+
+#contatti li.utente {
+    padding-left: 56px;
+    background: url(../immagini/icone/kuser_48x48.png) no-repeat;
+    line-height: 48px;
+}
+
+#contatti li.cellulare {
+    padding-left: 56px;
+    background: url(../immagini/icone/mobile_phone_48x48.png) no-repeat;
+    line-height: 48px;
+}
+
+#contatti li.telefono {
+    padding-left: 56px;
+    background: url(../immagini/icone/linphone_48x48.png) no-repeat;
+    line-height: 48px;
+}
+
+#contatti li.fax {
+    padding-left: 56px;
+    background: url(../immagini/icone/kdeprintfax_48x48.png) no-repeat;
+    line-height: 48px;
+}
+
+#contatti li.email {
+    padding-left: 56px;
+    background: url(../immagini/icone/email_48x48.png) no-repeat;
+    line-height: 48px;
+}
+
+@media screen and (min-width: 960px) and (max-width: 1119px) {
+    #contatti div {width: 50%;}
+    
+    #contatta div:first-child,
+    #moduloContatto div:first-child {width: 30%; }
+    
+    #contatta div,
+    #moduloContatto div { width: 70%; }
+    
+    #contatta input[type=text],
+    #moduloContatto input[type=text] {width: 95%;}
+    
+    #contatta textarea,
+    #moduloContatto textarea {width: 100%;}
+    
+    #contatta span,
+    #moduloContatto span {width: 100%; }
+    
+    section#dovesiamo iframe {width: 100%;}
+    
+    /* Dettagli */
+    
+    #infoTop span {width: 32.9%;}
+    
+    #placeImg {width: 66.66%}
+    
+    #placeImg img {width: 100%;}
+    
+    #imgHolder {
+        width: 31.5%;
+        height: 332px;
+    }
+    
+    #fotogallery li {width: 48.5%;}
+    
+    #ubicazione div { width: 100%; }
+    
+    #ubicazione dt,
+    #ubicazione dd { width: 23.6%; }
+    
+    #caratteristiche div { width: 50%; }
+    
+    #caratteristiche dt,
+    #caratteristiche dd { width: 47.55%; }
+    
+    #ubicazione div iframe {width: 99.4%;}
+}
