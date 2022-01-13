@@ -59,12 +59,12 @@ CREATE TABLE IF NOT EXISTS `tb_accessori` (
 -- Dump dei dati della tabella db_immobili.tb_accessori: 6 rows
 /*!40000 ALTER TABLE `tb_accessori` DISABLE KEYS */;
 INSERT INTO `tb_accessori` (`id_acces_res`, `cod_immo`, `tipo_prop`, `piano`, `livelli`, `ascensore`, `soggiorno`, `cucina`, `camera`, `sup_prod`, `sup_uff`, `sup_comm`, `sup_est`, `coltura`, `panorama`, `ettari`, `giacitura`, `dotazione`, `bagno`, `balcone`, `terrazza`, `giardino`, `garage`, `soffitta`, `mansarda`, `cantina`, `taverna`, `piscina`, `montacarichi`, `ribalte`, `carroponte`, `arredato`, `allarme`, `climatizzatore`, `riscaldamento`) VALUES
-	(3, 16, 'intera proprietÃ ', 'rialzato', 1, 1, 2, 'angolo cottura', 2, 0, 0, 0, 0, '', '', 0, '', '', 2, 0, 0, 'privato', '0', 0, 0, 1, 1, 0, 0, 0, 0, '0', '0', '0', 'termosingolo'),
-	(4, 17, 'intera proprietÃ ', '1&deg;', 1, 1, 1, 'angolo cottura', 1, 0, 0, 0, 0, '', '', 0, '', '', 1, 1, 0, '0', '0', 0, 0, 0, 0, 0, 0, 0, 0, '0', 'predisposizione', 'predisposizione', 'centralizzato'),
-	(5, 17, 'intera proprietÃ ', '0', 0, 0, 0, '0', 0, 0, 0, 0, 0, '', '', 0, '', '', 0, 0, 0, '0', '0', 0, 0, 0, 0, 0, 0, 0, 0, '0', '0', '0', 'inesistente'),
-	(6, 18, 'intera proprietÃ ', '1&deg;', 1, 1, 1, 'angolo cottura', 1, 0, 0, 0, 0, '', '', 0, '', '', 1, 1, 0, '0', '0', 0, 0, 0, 0, 0, 0, 0, 0, '0', 'predisposizione', 'predisposizione', 'centralizzato'),
-	(7, 19, 'intera proprietÃ ', 'terra', 1, 1, 1, 'abitabile', 2, 0, 0, 0, 0, '', '', 0, '', '', 2, 0, 0, 'privato', '0', 0, 0, 0, 0, 0, 0, 0, 0, '0', '0', '0', 'centralizzato'),
-	(8, 20, 'intera proprietÃ ', '1&deg;', 1, 1, 0, '0', 0, 187, 0, 0, 0, '', '', 0, '', '', 2, 1, 0, '0', '0', 0, 0, 0, 0, 0, 1, 0, 0, '0', '0', 'installata', 'termosingolo');
+	(3, 16, 'intera propriet&agrave;', 'rialzato', 1, 1, 2, 'angolo cottura', 2, 0, 0, 0, 0, '', '', 0, '', '', 2, 0, 0, 'privato', '0', 0, 0, 1, 1, 0, 0, 0, 0, '0', '0', '0', 'termosingolo'),
+	(4, 17, 'intera propriet&agrave;', '1&deg;', 1, 1, 1, 'angolo cottura', 1, 0, 0, 0, 0, '', '', 0, '', '', 1, 1, 0, '0', '0', 0, 0, 0, 0, 0, 0, 0, 0, '0', 'predisposizione', 'predisposizione', 'centralizzato'),
+	(5, 17, 'intera propriet&agrave;', '0', 0, 0, 0, '0', 0, 0, 0, 0, 0, '', '', 0, '', '', 0, 0, 0, '0', '0', 0, 0, 0, 0, 0, 0, 0, 0, '0', '0', '0', 'inesistente'),
+	(6, 18, 'intera propriet&agrave;', '1&deg;', 1, 1, 1, 'angolo cottura', 1, 0, 0, 0, 0, '', '', 0, '', '', 1, 1, 0, '0', '0', 0, 0, 0, 0, 0, 0, 0, 0, '0', 'predisposizione', 'predisposizione', 'centralizzato'),
+	(7, 19, 'intera propriet&agrave;', 'terra', 1, 1, 1, 'abitabile', 2, 0, 0, 0, 0, '', '', 0, '', '', 2, 0, 0, 'privato', '0', 0, 0, 0, 0, 0, 0, 0, 0, '0', '0', '0', 'centralizzato'),
+	(8, 20, 'intera propriet&agrave;', '1&deg;', 1, 1, 0, '0', 0, 187, 0, 0, 0, '', '', 0, '', '', 2, 1, 0, '0', '0', 0, 0, 0, 0, 0, 1, 0, 0, '0', '0', 'installata', 'termosingolo');
 /*!40000 ALTER TABLE `tb_accessori` ENABLE KEYS */;
 
 
@@ -178,12 +178,12 @@ INSERT INTO `tb_desc` (`id_desc`, `cod_immo`, `desc`) VALUES
 	(4, 15, 'COVERCIANO PRESSI. Luminoso e tranquillo attico 5 vani di 110mq. composto da ingresso, soggiorno, cucina abitabile, tre matrimoniali, ripostiglio, doppia terrazza e doppi servizi. Posto al terzo piano con ascensore. Riscaldamento centralizzato. Predisposizione aria condizionata. Lo si affitta vuoto.'),
 	(5, 15, 'COVERCIANO PRESSI. Luminoso e tranquillo attico 5 vani di 110mq. composto da ingresso, soggiorno, cucina abitabile, tre matrimoniali, ripostiglio, doppia terrazza e doppi servizi. Posto al terzo piano con ascensore. Riscaldamento centralizzato. Predisposizione aria condizionata. Lo si affitta vuoto.'),
 	(6, 16, 'VALLINA PRESSI, a circa 4 km dal Viale Europa, vendesi appartamento ristrutturato di 5 vani 115 mq oltre giardino di 120 mq circa, posto al piano terra rialzato in piccolo terratetto edificato nel 2002. Provvisto di doppio ingresso, &egrave; attualmente composto da soggiorno doppio con angolo cottura, camera matrimoniale dotata di cabina armadio, camera singola e studio. Dotato di doppi servizi, ripostiglio, taverna con ulteriore servizio e cantina. Riscaldamento autonomo, aria condizionata, due posti auto esclusivi con cancello automatico. Predisposto per eventuale divisione in due unit&agrave; indipendenti. Prezzo trattabile.'),
-	(7, 17, 'COVERCIANO pressi vendesi luminoso laboratorio di 500 mq  in ottimo stato, posto al piano terra con passo carrabile e composto da grande vano principale, ulteriore ampio vano, doppi servizi e vano archivio. Si presta a varie destinazioni d\'uso.'),
+	(7, 17, 'COVERCIANO pressi vendesi luminoso laboratorio di 500 mq  in ottimo stato, posto al piano terra con passo carrabile e composto da grande vano principale, ulteriore ampio vano, doppi servizi e vano archivio. Si presta a varie destinazioni d''uso.'),
 	(8, 17, 'VIALE VOLTA pressi vendesi appartamento di due vani e mezzo di 60 mq. ca. ristrutturato con ingresso indipendente, posto al primo piano. Composto da soggiorno con angolo cottura, camera matrimoniale, ripostiglio, servizio e balcone. Posto auto condominiale. Termocentrale e predisposizione aria condizionata, tv-sat, e allarme.\r\n'),
 	(9, 17, ''),
 	(10, 18, 'VIALE VOLTA pressi vendesi appartamento di due vani e mezzo di 60 mq. ca. ristrutturato con ingresso indipendente, posto al primo piano. Composto da soggiorno con angolo cottura, camera matrimoniale, ripostiglio, servizio e balcone. Posto auto condominiale. Termocentrale e predisposizione aria condizionata, tv-sat, e allarme.\r\n'),
 	(11, 19, 'COVERCIANO-GIGNORO PRESSI affittasi in zona silenziosa appartamento 4 vani di 100mq. con ampio giardino privato, posto al piano terra di stabile di tre piani. Composto da ingresso, soggiorno, cucina abitabile, due camere matrimoniali, ripostiglio, terrazzo e doppi servizi. Riscaldamento centralizzato. Lo si affitta vuoto o arredato di sola cucina. Possibilit&agrave; di affittare posto auto coperto. Libero da Luglio.'),
-	(12, 20, 'SCANDICCI VIA DEI PRATONI PRESSI affittasi laboratorio in ottime condizioni posto al primo e ultimo piano con ascensore montacarichi. Metratura 187 mq oltre terrazza di 40 mq e doppio servizio. Aria condizionata e riscaldamento. Abbondanza di posti auto nell\'area esterna. Prezzo trattabile.');
+	(12, 20, 'SCANDICCI VIA DEI PRATONI PRESSI affittasi laboratorio in ottime condizioni posto al primo e ultimo piano con ascensore montacarichi. Metratura 187 mq oltre terrazza di 40 mq e doppio servizio. Aria condizionata e riscaldamento. Abbondanza di posti auto nell''area esterna. Prezzo trattabile.');
 /*!40000 ALTER TABLE `tb_desc` ENABLE KEYS */;
 
 
@@ -430,7 +430,7 @@ INSERT INTO `tb_zona` (`id_zona`, `nm_zona`, `cod_comune`) VALUES
 	(35, 'San Lorenzo', 2),
 	(36, 'San Martino', 2),
 	(37, 'San Piero a Ponti', 2),
-	(38, 'Sant\'Angelo a Lecore', 2),
+	(38, 'Sant''Angelo a Lecore', 2),
 	(39, 'Santa Maria', 2),
 	(40, 'Santo Stefano', 2),
 	(41, 'Antella', 3),
@@ -469,7 +469,7 @@ INSERT INTO `tb_zona` (`id_zona`, `nm_zona`, `cod_comune`) VALUES
 	(74, 'Giardino di Boboli', 1),
 	(75, 'Careggi', 1),
 	(76, 'Settignano', 1),
-	(77, 'Sant\'Ambrogio', 1),
+	(77, 'Sant''Ambrogio', 1),
 	(78, 'Fortezza', 1),
 	(79, 'Rovezzano', 1);
 /*!40000 ALTER TABLE `tb_zona` ENABLE KEYS */;
